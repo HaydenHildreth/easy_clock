@@ -11,10 +11,17 @@ def update():
 
 
 try:
-    with open('config.json', 'r') as c:
-        config = json.load(c)
+    with open('config.json', 'r') as f:
+        config = json.load(f)
 except FileNotFoundError:
-    pass  # later, make file if not found
+    with open('config.json', 'w') as f:
+        f.write('{\n')
+        f.write('  "bg_color" : "black",\n')
+        f.write('  "text_color" : "white",\n')
+        f.write('  "font" : "Comic Sans MS",\n')
+        f.write('  "time_format" : "%I:%M:%S"\n')
+        f.write('}')
+        raise FileNotFoundError('Error. Restart.')
 
 
 bg_color = config['bg_color']
@@ -23,6 +30,7 @@ font = config['font']
 time_format = config['time_format']
 
 root = Tk()
+root.title("easy_clock")
 canvas = Canvas(root, bg=bg_color)
 canvas.pack(fill='both', expand=YES)
 
