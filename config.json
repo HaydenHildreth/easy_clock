@@ -1,0 +1,6 @@
+{
+  "bg_color" : "black",
+  "text_color" : "white",
+  "font" : "Comic Sans MS",
+  "time_format" : "%I:%M:%S"
+}
