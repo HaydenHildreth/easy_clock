@@ -13,7 +13,7 @@ def update():
 try:
     with open('config.json', 'r') as c:
         config = json.load(c)
-except RuntimeError:
+except FileNotFoundError:
     pass  # later, make file if not found
 
 
