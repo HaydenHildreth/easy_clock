@@ -6,7 +6,9 @@ from tkinter import *
 def update():
     canvas.delete('all')
     var_t = time.strftime(time_format)
-    canvas.create_text(0, 0, text=var_t, font=(font, 55), fill=text_color, anchor=NW)
+    x_val = root.winfo_width() / 2
+    y_val = root.winfo_height() / 2
+    canvas.create_text(x_val, y_val, text=var_t, font=(font, 55), fill=text_color)
     canvas.after(100, update)
 
 
