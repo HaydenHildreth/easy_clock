@@ -8,7 +8,7 @@ def update():
     var_t = time.strftime(time_format)
     x_val = root.winfo_width() / 2
     y_val = root.winfo_height() / 2
-    canvas.create_text(x_val, y_val, text=var_t, font=(font, 55), fill=text_color)
+    canvas.create_text(x_val, y_val, text=var_t, font=(font, font_size), fill=text_color)
     canvas.after(100, update)
 
 
@@ -20,15 +20,15 @@ except FileNotFoundError:
         f.write('{\n')
         f.write('  "bg_color" : "black",\n')
         f.write('  "text_color" : "white",\n')
-        f.write('  "font" : "Comic Sans MS",\n')
+        f.write('  "font" : "comic sans ms",\n')
         f.write('  "time_format" : "%I:%M:%S"\n')
         f.write('}')
         raise FileNotFoundError('Error. Restart.')
 
-
 bg_color = config['bg_color']
 text_color = config['text_color']
 font = config['font']
+font_size = config['font_size']
 time_format = config['time_format']
 
 root = Tk()
