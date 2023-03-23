@@ -1,7 +1,7 @@
 {
   "bg_color" : "black",
   "text_color" : "white",
-  "font" : "Comic Sans MS",
+  "font" : "arial",
   "font_size" : "55",
   "time_format" : "%I:%M:%S"
 }
