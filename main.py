@@ -20,7 +20,7 @@ except FileNotFoundError:
         f.write('{\n')
         f.write('  "bg_color" : "black",\n')
         f.write('  "text_color" : "white",\n')
-        f.write('  "font" : "comic sans ms",\n')
+        f.write('  "font" : "arial",\n')
         f.write('  "font_size" : "55",\n')
         f.write('  "time_format" : "%I:%M:%S"\n')
         f.write('}')
