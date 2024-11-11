@@ -23,7 +23,7 @@ except FileNotFoundError:
         f.write('  "font" : "arial",\n')
         f.write('  "font_size" : "55",\n')
         f.write('  "time_format" : "%I:%M:%S"\n')
-        f.write('  "anchor" : "e"\n')
+        f.write('  "anchor" : "center"\n')
         f.write('}')
         raise FileNotFoundError('Error. Restart.')
 
