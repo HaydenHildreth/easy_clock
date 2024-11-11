@@ -4,5 +4,5 @@
   "font" : "arial",
   "font_size" : "55",
   "time_format" : "%I:%M:%S",
-  "anchor" :"s"
+  "anchor" :"center"
 }
