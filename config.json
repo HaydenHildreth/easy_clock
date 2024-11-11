@@ -3,5 +3,6 @@
   "text_color" : "white",
   "font" : "arial",
   "font_size" : "55",
-  "time_format" : "%I:%M:%S"
+  "time_format" : "%I:%M:%S",
+  "anchor" :"s"
 }
